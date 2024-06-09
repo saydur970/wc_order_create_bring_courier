@@ -1,0 +1,209 @@
+#bringBooking_create_btn {
+  display: inline-block !important;
+  color: #fff !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/* =================== backdrop/modal =================== */
+#bringBooking_create_backdrop {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.bringBooking_create_modal {
+  width: 40%;
+  min-width: 450px;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+
+/* =================== input div =================== */
+
+.bringBooking_inputSection {
+  margin-bottom: 50px;
+}
+
+.bringBooking_inputSection h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.bringBooking_inputContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.bringBooking_inputDiv {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.bringBooking_inputLabel {
+  font-size: 14px;
+  color: #222831;
+}
+
+.bringBooking_inputBox {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 10px 6px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+#bringBooking_actionBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* =================== close btn =================== */
+.bringBooking_bookingConfirmBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* =================== close btn =================== */
+
+#bringBooking_modal_close {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2b2d42;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 5px;
+}
+
+#bringBooking_modal_close:hover {
+  color: #6c757d;
+}
+
+/* =================== create response msg =================== */
+
+.booking_create_res_div {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking_create_res_div h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.booking_create_res_div p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* ========================== spinner ========================== */
+.spinner_content {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.spinner_content div {
+  animation: spinner_animate 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.spinner_content div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #B31312;
+  margin: -4px 0 0 -4px;
+}
+.spinner_content div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.spinner_content div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.spinner_content div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.spinner_content div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.spinner_content div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.spinner_content div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.spinner_content div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.spinner_content div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.spinner_content div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.spinner_content div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.spinner_content div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.spinner_content div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.spinner_content div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.spinner_content div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.spinner_content div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.spinner_content div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes spinner_animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

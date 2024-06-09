@@ -1,0 +1,85 @@
+.bring_booking_contentRoot {
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+.bring_booking_rootTitle {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.bring_booking_err_msg {
+  font-size: 25px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.bring_booking_detail_dt {
+  font-size: 22px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.bring_booking_timeline {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.bring_booking_timeline li {
+  padding-left: 5px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.bring_booking_ol_deliverLeftCol p {
+  margin: 0;
+}
+
+.bring_booking_ol_deliverLeftCol h4 {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.bring_booking_ol_deliverLeftCol .date {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.bring_booking_ol_deliverLeftCol .place {
+  color: rgb(110, 110, 110);
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.bring_booking_ol_circle {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.bring_booking_ol_deliverRightCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.bring_booking_ol_line {
+  width: 4px;
+  background-color: red;
+  flex-grow: 1;
+  margin-top: 15px;
+}
+
+.bring_booking_timeline li:last-child .bring_booking_ol_line {
+  display: none;
+}
